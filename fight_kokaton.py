@@ -191,11 +191,6 @@ class Explosion:
                 screen.blit(self.gifs[0], self.rct)
 
 
-            
-
-
-
-
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
     screen = pg.display.set_mode((WIDTH, HEIGHT))    
@@ -248,7 +243,6 @@ def main():
         bombs = [bomb for bomb in bombs if bomb is not None]
         beams = [beam for beam in beams if beam is not None]
         
-
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
         for i, beam in enumerate(beams):
